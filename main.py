@@ -8,7 +8,8 @@ should_continue = True
 menu = Menu()
 
 while should_continue:
-    print('What would you like? (espresso/latte/cappuccino/):')
+    options =menu.get_items()
+    print(f'What would you like? ({options}):')
     user_input = input().lower()
 
     if user_input == 'off':
