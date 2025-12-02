@@ -15,6 +15,7 @@ while should_continue:
         should_continue = False
     elif user_input == 'report':
         coffee_maker.report()
+        money_machine.report()
     else:
         drink = menu.find_drink(user_input)
         if coffee_maker.is_resource_sufficient(drink):
